@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Nombre del Proyecto] - Videojuego desarrollado con Unity para [plataforma]">
+    <meta name="author" content="[Tu nombre]">
+    <title>Tiny World</title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <main class="main-content">
+            
+            <!-- === VOLVER A MI TRABAJO (ARRIBA, FUERA DEL ARTÍCULO) === -->
+            <div class="nav-return">
+                <a href="../trabajo.html" class="return-link">← Volver a Mi trabajo</a>
+            </div>
+            
+            <!-- === ARTÍCULO DEL PROYECTO === -->
+            <article class="project-detail">
+                
+                <!-- === FILA DE DOS COLUMNAS: VIDEO + INFO === -->
+                <div class="project-row vertical-layout">
+                    
+                    <!-- Columna izquierda: Video (60%) -->
+                    <div class="project-media">
+                        <div class="video-wrapper vertical">
+                            <!--
+                            <video 
+                                class="vertical"
+                                src="../assets/videos/ChromaRush.mp4"  
+                                playsinline
+                                controls
+                                poster="../assets/img/chroma-rush-thumb.png"
+                            >
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                            -->
+                            <iframe 
+                             
+                            src="https://www.youtube.com/embed/QwaQnHtgqvw?si=zsIkHkseIYJLRftm" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna derecha: Información del proyecto (40%) -->
+                    <div class="project-info-side">
+                        
+                        <h1 class="project-title">Tiny Worlds</h1>
+                        
+                        <div class="project-meta">
+                            <span class="platform">🎮 Google Play</span>
+                            <span class="year">📅 2026</span>
+                            <span class="status">✅ Finalizado</span>
+                        </div>
+                        
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                        </div>
+                        
+                        <div class="project-brief">
+                            <p>
+                                Es un juego híbrido que combina mecánicas de Puzzle Match-3 y Tower Defense. 
+                                Los jugadores realizan combinaciones en un tablero para invocar tropas, generar ataques y 
+                                utilizar habilidades especiales con el objetivo de defender su torre y destruir la del enemigo. 
+                                Conforme el juego avanza, se introducen nuevos tipos de enemigos y mecánicas de tablero, por lo que 
+                                el jugador debe adaptar su estrategia y mejorar sus tropas y estructuras para superar estos desafíos.
+                            </p>
+                        </div>
+                        
+                        <!--
+                        <div class="project-features-side">
+                            <h4>Características principales</h4>
+                            <ul>
+                                <li>✓ [Característica 1]</li>
+                                <li>✓ [Característica 2]</li>
+                                <li>✓ [Característica 3]</li>
+                            </ul>
+                        </div>
+                        -->
+                    </div> <!-- Fin project-info-side -->
+                    
+                </div> <!-- Fin project-row -->
+                
+                <!-- ============================================ -->
+                <!-- === SECCIONES DE ANCHO COMPLETO (abajo) === -->
+                <!-- ============================================ -->
+                
+                <!-- Mi rol en el proyecto -->
+                <div class="project-section-full">
+                    <h2>Mi rol en el proyecto</h2>
+                    <p>
+                        En este proyecto, participé en el desarrollo de sistemas de combate, comportamiento de tropas y habilidades especiales en Unity, 
+                        implementando mecánicas de progresión, generación de enemigos y escalado dinámico de dificultad. También desarrollé sistemas de mejora 
+                        para las tropas y estructuras del jugador, así como la lógica de interfaces, recompensas y progresión. Adicionalmente, integré 
+                        funcionalidades de monetización mediante anuncios recompensados y compras dentro de la aplicación (In-App Purchases), y sincronizé 
+                        las animaciones de combate utilizando Animation Events para reforzar la experiencia de juego.
+                    </p>
+                </div>
+                
+                <!-- Desafíos técnicos -->
+                <div class="project-section-full">
+                    <h2>Desafíos técnicos</h2>
+                    <p>
+                        En este proyecto incorporé el sistema de combate entre tropas mediante Animation Events, sincronizando la aplicación del daño con las animaciones
+                        de ataque para lograr una interacción más precisa y natural entre las unidades. Su implementación representó un reto importante, ya que requería
+                        coordinar correctamente las animaciones con la lógica del combate, evitando problemas como la aplicación múltiple de daño, ataques fuera de 
+                        tiempo o la desincronización entre el estado de las tropas y sus animaciones. <br>
+
+                        <br>Para el caso del arquero, implementé un sistema con diferentes puntos de aparición para las flechas en función de la animación que se estuviera
+                        reproduciendo. Esto permitió que cada proyectil se generara desde la posición correcta del arco, aportando mayor coherencia visual y una
+                        sensación de inmersión más natural. Aunque conceptualmente parecía una tarea sencilla, fue necesario sincronizar las animaciones con la 
+                        ógica de generación de proyectiles para evitar problemas como flechas que aparecieran desde posiciones incorrectas o desajustes entre 
+                        la animación y el momento del disparo.<br>
+
+                        <br>Por último, implementé un sistema de navegación entre niveles como parte de la interfaz de usuario. Asimismo, desarrollé la lógica que 
+                        determina el comportamiento del juego según el tipo de nivel, ya fuera un nivel normal, de bonificación o un enfrentamiento contra un jefe.
+                        Esto implicó gestionar el desbloqueo de nuevos niveles, la disponibilidad de tropas enemigas y otras condiciones específicas de progresión, 
+                        garantizando que cada tipo de nivel ofreciera una experiencia acorde a su propósito dentro del juego.
+                    </p>
+                </div>
+                
+                <!-- Enlaces -->
+                <div class="project-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.SirihandeGames.TowerCrush" class="btn-primary" target="_blank">
+                        📱 Ver en Google Play
+                    </a>
+                    <!--
+                    <a href="https://github.com/tu-usuario/proyecto" class="btn-secondary" target="_blank">
+                        🐙 Ver código en GitHub
+                    </a>
+                    <a href="https://tu-usuario.itch.io/proyecto" class="btn-secondary" target="_blank">
+                        🎮 Jugar en itch.io
+                    </a>
+                    -->
+                </div>
+                
+            </article> <!-- Fin project-detail -->
+        </main>
+        
+        <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../trabajo.html">Mi trabajo</a></li>
+                <li><a href="../sobre-mi.html">Sobre mí</a></li>
+                <li><a href="../cv.html">CV</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </div> <!-- Fin container -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

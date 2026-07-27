@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - [Tu nombre] - Desarrollador Unity">
+    <meta name="author" content="[Tu nombre]">
+    <title>Contacto</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <main class="main-content">
+            <section class="page-section">
+                
+                <!-- Título -->
+                <h2 class="page-title">Contacto</h2>
+                
+                <!-- === MENSAJE DE BIENVENIDA === -->
+                <div class="contact-intro">
+                    <p>
+                        ¿Hablamos? Estoy abierto a colaboraciones, procesos de selección
+                        y proyectos interesantes. ¡Escríbeme!
+                    </p>
+                </div>
+                
+                <!-- === FILA: FORMULARIO + ENLACES === -->
+                <div class="contact-row">
+                    
+                    <!-- Columna izquierda: Formulario -->
+                    <div class="contact-form-wrapper">
+                        <!-- mailto: abre el cliente de correo con los datos prellenados -->
+                        <form id="contactForm" class="contact-form" action="mailto:andresfe_mera@hotmail.com" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="¿Sobre qué quieres hablar?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Cuéntame más..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">
+                                Enviar mensaje →
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Columna derecha: Enlaces -->
+                    <div class="contact-links-wrapper">
+                        <h4>Encuéntrame también en</h4>
+                        
+                        <div class="contact-links">
+                            <a href="mailto:andresfe_mera@hotmail.com" class="contact-link" target="_blank">
+                                <span class="contact-icon">📧</span>
+                                <span class="contact-label">Outlook</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/andres-felipe-mera-martinez-dev/" class="contact-link" target="_blank">
+                                <span class="contact-icon">💼</span>
+                                <span class="contact-label">LinkedIn</span>
+                            </a>
+                            
+                            <a href="https://github.com/andresmera-eng" class="contact-link" target="_blank">
+                                <span class="contact-icon">🐙</span>
+                                <span class="contact-label">GitHub</span>
+                            </a>
+                            
+                            <a href="https://andres-mera.itch.io/" class="contact-link" target="_blank">
+                                <span class="contact-icon">🎮</span>
+                                <span class="contact-label">Itch.io</span>
+                            </a>
+                            
+                            <!--
+                            <a href="https://play.google.com/store/apps/dev?id=..." class="contact-link" target="_blank">
+                                <span class="contact-icon">📱</span>
+                                <span class="contact-label">Google Play</span>
+                            </a>
+                            -->
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        </main>
+        
+        <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="trabajo.html">Mi trabajo</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

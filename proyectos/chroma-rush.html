@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Nombre del Proyecto] - Videojuego desarrollado con Unity para [plataforma]">
+    <meta name="author" content="[Tu nombre]">
+    <title>Chroma Rush</title>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <main class="main-content">
+            
+            <!-- === VOLVER A MI TRABAJO (ARRIBA, FUERA DEL ARTÍCULO) === -->
+            <div class="nav-return">
+                <a href="../trabajo.html" class="return-link">← Volver a Mi trabajo</a>
+            </div>
+            
+            <!-- === ARTÍCULO DEL PROYECTO === -->
+            <article class="project-detail">
+                
+                <!-- === FILA DE DOS COLUMNAS: VIDEO + INFO === -->
+                <div class="project-row vertical-layout">
+                    
+                    <!-- Columna izquierda: Video (60%) -->
+                    <div class="project-media">
+                        <div class="video-wrapper vertical">
+                            <!--
+                            <video 
+                                class="vertical"
+                                src="../assets/videos/ChromaRush.mp4"  
+                                playsinline
+                                controls
+                                poster="../assets/img/chroma-rush-thumb.png"
+                            >
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                            -->
+                            <iframe 
+                             
+                            src="https://www.youtube.com/embed/7OenhLyJxqE?si=0L9PKu8oB7Vbjo-I" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna derecha: Información del proyecto (40%) -->
+                    <div class="project-info-side">
+                        
+                        <h1 class="project-title">Chroma Rush</h1>
+                        
+                        <div class="project-meta">
+                            <span class="platform">🎮 Google Play</span>
+                            <span class="year">📅 2025</span>
+                            <span class="status">✅ Finalizado</span>
+                        </div>
+                        
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                        </div>
+                        
+                        <div class="project-brief">
+                            <p>
+                                Es un juego arcade de reflejos y pensamiento rápido en el que los jugadores deben sobrevivir el mayor tiempo posible identificando
+                                 y recogiendo objetos que coincidan con la forma y el color de su personaje. Según el nivel de dificultad, se introducen nuevas formas 
+                                 y mecánicas, exigiendo una mayor capacidad de adaptación y concentración
+                            </p>
+                        </div>
+                        
+                        <!--
+                        <div class="project-features-side">
+                            <h4>Características principales</h4>
+                            <ul>
+                                <li>✓ [Característica 1]</li>
+                                <li>✓ [Característica 2]</li>
+                                <li>✓ [Característica 3]</li>
+                            </ul>
+                        </div>
+                        -->
+                    </div> <!-- Fin project-info-side -->
+                    
+                </div> <!-- Fin project-row -->
+                
+                <!-- ============================================ -->
+                <!-- === SECCIONES DE ANCHO COMPLETO (abajo) === -->
+                <!-- ============================================ -->
+                
+                <!-- Mi rol en el proyecto -->
+                <div class="project-section-full">
+                    <h2>Mi rol en el proyecto</h2>
+                    <p>
+                        En este proyecto, participé en el desarrollo de sistemas de juego y progresión en Unity, implementando mecánicas de validación
+                         basadas en forma y color, sistemas de vidas, puntuación, habilidades temporales y escalado de dificultad. También desarrollé 
+                         sistemas de generación de objetos, power-ups y cambios dinámicos de forma del jugador. Adicionalmente, implementé la lógica 
+                         de interfaces de usuario, sistemas de récords y continuación mediante anuncios recompensados, e integré efectos de sonido y 
+                         música para enriquecer la experiencia de juego.
+                    </p>
+                </div>
+                
+                <!-- Desafíos técnicos -->
+                <div class="project-section-full">
+                    <h2>Desafíos técnicos</h2>
+                    <p>
+                        Al ser el primer proyecto que desarrollé, representó una oportunidad para enfrentar diversos desafíos técnicos y adquirir experiencia en la 
+                        implementación de mecánicas fundamentales. Uno de los principales retos fue el manejo de los estados de pausa y game over, ya que la reproducción
+                         de la música y los efectos de sonido se controlaban de forma independiente, lo que requería sincronizar correctamente ambos sistemas para 
+                         evitar comportamientos inesperados al pausar o reanudar la partida. <br>
+
+                        <br>Además, fue la primera vez que implementé un sistema de regeneración de vidas basado en el tiempo transcurrido, tanto mientras la aplicación
+                         se encontraba en ejecución como cuando permanecía cerrada. Para ello, tuve que aprender a registrar y comparar información temporal entre 
+                         sesiones, garantizando que el progreso del jugador se actualizara correctamente al volver a iniciar el juego.
+                    </p>
+                </div>
+                
+                <!-- Enlaces -->
+                <div class="project-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.SirihandeGames.ChromaRush" class="btn-primary" target="_blank">
+                        📱 Ver en Google Play
+                    </a>
+                    <!--
+                    <a href="https://github.com/tu-usuario/proyecto" class="btn-secondary" target="_blank">
+                        🐙 Ver código en GitHub
+                    </a>
+                    <a href="https://tu-usuario.itch.io/proyecto" class="btn-secondary" target="_blank">
+                        🎮 Jugar en itch.io
+                    </a>
+                    -->
+                </div>
+                
+            </article> <!-- Fin project-detail -->
+        </main>
+        
+        <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../trabajo.html">Mi trabajo</a></li>
+                <li><a href="../sobre-mi.html">Sobre mí</a></li>
+                <li><a href="../cv.html">CV</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </div> <!-- Fin container -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
