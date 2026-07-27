@@ -1522,7 +1522,7 @@ body {
 
 /* Video vertical (9:16) */
 .video-wrapper.vertical {
-    padding-bottom: 177.78%; /* 16/9 = 1.7778 */
+    padding-bottom: 130%; /* 16/9 = 1.7778 */
     max-width: 400px;        /* ← Límite de ancho para verticales */
     margin: 0 auto;
 }
